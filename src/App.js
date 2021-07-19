@@ -22,9 +22,10 @@ const [singleMeme, setsingleMeme] = useState(null)
    
 
   return (
-    <div className="App">
+    <>
+   
     {singleMeme === null? <MemeList memes={memes}  setsingleMeme={setsingleMeme}/> : <Meme setsingleMeme={setsingleMeme} singleMeme={singleMeme}/> }
-    </div>
+    </>
     );
 }
 

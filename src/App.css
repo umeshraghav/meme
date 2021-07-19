@@ -27,7 +27,9 @@
     box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.5);
     cursor: pointer;
 }
-
+.btn_container{
+    display: flex;
+}
  .btn{
     
     display: flex;
@@ -38,6 +40,9 @@
     justify-content: center;
     outline: none;
      margin: 10px;
+ }
+ .btn:hover{
+     cursor: pointer;
  }
  .btn1{
      border: none;
@@ -51,15 +56,28 @@
     font-weight: 400;
    background: #D78521;;
 }
+.meme-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+ 
 
  input{
-     height: 35px;
-     width: 180px;
-     background: #aaa5a5;
+   
+        height: 3.2rem;
+     background: #f7f7f7;
      margin: 10px;
-     color: #fff;
+     color: #D78521;
      text-align: center;
      outline: none;
-     border: none;
+     font-size: larger;
+     border: 1px solid gray;
      border-radius:8px ;
  }
+
+h2{
+    text-align: center;
+    margin-bottom: 5%;
+}

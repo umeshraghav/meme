@@ -1,7 +1,7 @@
 import React, {useState} from 'react'
-
+ 
 function Meme({singleMeme,setsingleMeme}) {
-
+     
         const [memeData, setMemeData] = useState({
             template_id : singleMeme.id,
             username : "umeshraghav55",
@@ -17,25 +17,28 @@ function Meme({singleMeme,setsingleMeme}) {
                 memeData.boxes.map((box,index)=>{
                   return  url+= `&boxes[${index}][text]=${box.text}`
                 })
+              
                 const response = await fetch(url)
                 const data = await response.json()
 
                 setsingleMeme({...singleMeme, url :data.data.url})
-                 
+            
        
         }
 
 
 
     return (
-        <div>
+       
+        <div className="meme-container">
+                 <h2>Create Meme </h2>
             <div className="meme">
             <img src={singleMeme.url} alt={singleMeme.name} />
 
             </div>
 
 
-            <div className="btns"> 
+            
                 <div>
                       {  
                        [...Array(singleMeme.box_count)].map((_, index)=>(
@@ -53,7 +56,7 @@ function Meme({singleMeme,setsingleMeme}) {
                       
                       }
                 </div>
-
+                <div className="btn_container"> 
             <button className="btn btn1" onClick={generateMeme}> Generate Meme </button>
                 
             <button className="btn btn2" onClick={()=> setsingleMeme(null)}> Go to MemeList </button>

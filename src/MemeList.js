@@ -4,6 +4,7 @@ export default function MemeList({memes,setsingleMeme }) {
     return (
 
         <div>
+                 <h2>Choose Meme Template </h2>
         {
             memes.map( (meme) =>{
               return  <section className="template" key={meme.id} onClick={()=> {setsingleMeme(meme)}}> 
