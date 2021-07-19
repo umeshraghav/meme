@@ -1,0 +1,65 @@
+.main{
+    margin: 0px;
+    background: #119DA4;
+}
+
+ .template{
+     display: inline-block;
+    width: 33%;
+   
+ }
+.template> .memes{
+    background-size: cover;
+    margin: 10px;
+    height: 500px;
+    cursor: pointer;
+}
+.template> .memes:hover{
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.5);
+}
+ .meme>img{
+     display: flex;
+     align-items: center;
+     justify-content: center;
+     height: 400px;
+ }
+ .meme :hover{
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.5);
+    cursor: pointer;
+}
+
+ .btn{
+    
+    display: flex;
+    border: 1px solid grey;
+    padding: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    outline: none;
+     margin: 10px;
+ }
+ .btn1{
+     border: none;
+     color:#fff;
+     font-weight: 400;
+    background: #28AFB0;
+ }
+ .btn2{
+    border: none;
+    color:#fff;
+    font-weight: 400;
+   background: #D78521;;
+}
+
+ input{
+     height: 35px;
+     width: 180px;
+     background: #aaa5a5;
+     margin: 10px;
+     color: #fff;
+     text-align: center;
+     outline: none;
+     border: none;
+     border-radius:8px ;
+ }
